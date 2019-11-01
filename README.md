@@ -23,6 +23,7 @@ Elementos básicos: menú, juego, créditos, sonido, esquema de bucles de funcio
 
 Propuesta de puntos de reciclar:
 1. Menú básico 1x1: Un menú de entrar y un juego (sin determinar: temporizador)
+https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/menu_basic_1x1/menu_basic_1x1.html
 2. Menú selección 2x1: Dos menús de selección (nivel) y un juego (sin determinar: temporizador).
 3. Menú selección 3x1: Tres menús de selección (nivel, personaje) y un juego (sin determinar: temporizador).
 4. Entorno 3D + menú selección 3x1. Mecánicas de movimiento personaje
