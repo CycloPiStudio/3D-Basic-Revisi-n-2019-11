@@ -26,7 +26,6 @@ Propuesta de puntos de reciclar:
 
 https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/menu_basic_1x1/menu_basic_1x1.html
 
-https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/c5fee690a9ea1161294bc9ab4613a99ec8621211
 
 2. Menú selección 2x1: Dos menús de selección (nivel) y un juego (sin determinar: temporizador).
 3. Menú selección 3x1: Tres menús de selección (nivel, personaje) y un juego (sin determinar: temporizador).
