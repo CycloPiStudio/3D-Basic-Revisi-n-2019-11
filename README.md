@@ -1,7 +1,7 @@
 # 3D-Basic-Revisión-2019-11
 # 3D-Basic  Plantilla para crear juego en 3D utilizando Godot 3.   Revisión 2019 - 11
 
-Se eseguirá la siguiente organización:
+Se seguirá la siguiente organización:
 
 -Cada carpeta puede contener una escena.scn, scritp.gd y las carpetas necesarias para que funcione la escena:
 
