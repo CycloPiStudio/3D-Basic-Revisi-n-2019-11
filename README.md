@@ -17,7 +17,16 @@ Posibles orígenes de los errores
 
 Debido a la cantidad de errores que tiene el juego se crea un archivo nuevo desde 0 con versión de Godot 3.1, utilizando los recursos del 3D Basic original. Se mantiene la estructura de carpetas y funcionamiento.
 
-La construcción del juego con puntos donde se puedan reciclar funcionales ==> exportación
+La construcción del juego con puntos donde se puedan reciclar (funcionales ==> exportación) con objetivo de que la plantilla sea más escalable y aprovechable.
+
+Elementos básicos: menú, juego, créditos, sonido, esquema de bucles de funcionamiento, plantillas de exportación, programa funcional (corriendo).
+
+Propuesta de puntos de reciclar:
+1. Menú básico 1x1: Un menú de entrar y un juego (sin determinar: temporizador)
+2. Menú selección 2x1: Dos menús de selección (nivel) y un juego (sin determinar: temporizador).
+3. Menú selección 3x1: Tres menús de selección (nivel, personaje) y un juego (sin determinar: temporizador).
+4. Entorno 3D + menú selección 3x1. Mecánicas de movimiento personaje
+5. ... y sigue hasta terminar el puto juego
 
 
 3D Basic original:
