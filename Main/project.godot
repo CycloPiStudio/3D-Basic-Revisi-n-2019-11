@@ -19,6 +19,10 @@ config/name="3D_basic_revision_201911"
 run/main_scene="res://Ejecutable/Global/Global Menus/Global Menus.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Ejecutable/Global/Global.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
