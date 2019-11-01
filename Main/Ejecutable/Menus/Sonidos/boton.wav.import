@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/boton.wav-a9d39b4f0aec8d3a14a8dd601377f416.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Menus/Sonidos/boton.wav"
+dest_files=[ "res://.import/boton.wav-a9d39b4f0aec8d3a14a8dd601377f416.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
