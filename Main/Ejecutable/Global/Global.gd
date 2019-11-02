@@ -14,8 +14,12 @@ var partida
 ##	print (RutaNivelSelect)
 #	pass
 func subirnivel():
+	print(nivel, "nivel")
 	nivel += 1 
 	print("A subido de nivel", nivel)
+#	if not  nivel == "nivel2":
+#		nivel += 1 
+		
 	
 
 func _ready():
@@ -168,10 +172,11 @@ func _ready():
 #
 #	print ("cargar partida")
 #
-#func cargarPlayer(RutaPersonajeSelect):
-#	personaje = load(RutaPersonajeSelect).instance()
-#	personaje.set_name("personaje")
-#	print ("carga player")
+func cargarPlayer(RutaPersonajeSelect0):
+	print ("carga player",RutaPersonajeSelect0)
+	personaje = load(RutaPersonajeSelect0).instance()
+	personaje.set_name("personaje")
+	print ("carga player")
 #
 #func cargarNivel(RutaNivelSelect0):
 #	partida = load(str(RutaNivelSelect0)).instance()
