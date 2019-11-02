@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Dano.wav-f9c1a92717f016607ff68202560e4a5d.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Personajes/Sonidos/Dano.wav"
+dest_files=[ "res://.import/Dano.wav-f9c1a92717f016607ff68202560e4a5d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

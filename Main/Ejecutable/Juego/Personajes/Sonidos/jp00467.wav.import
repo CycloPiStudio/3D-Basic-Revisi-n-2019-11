@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/jp00467.wav-455d407065e737820c09a10a2e9ca71d.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Personajes/Sonidos/jp00467.wav"
+dest_files=[ "res://.import/jp00467.wav-455d407065e737820c09a10a2e9ca71d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

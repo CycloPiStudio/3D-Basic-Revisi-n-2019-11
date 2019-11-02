@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/comol.wav-fd6738ee65c7ced87bede5c736fcb947.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Personajes/Personaje 1/Sonido/comol.wav"
+dest_files=[ "res://.import/comol.wav-fd6738ee65c7ced87bede5c736fcb947.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
