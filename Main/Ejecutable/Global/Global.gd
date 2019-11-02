@@ -13,7 +13,11 @@ var partida
 #func _process(delta):
 ##	print (RutaNivelSelect)
 #	pass
-#
+func subirnivel():
+	nivel += 1 
+	print("A subido de nivel", nivel)
+	
+
 func _ready():
 	print("Activo en el global ", personaje,RutaPersonajeSelect,nivel,nivel,RutaNivelSelect,vida, puntos , arma, partida)
 #	print("Activo en el global variable RutaPersonajeSelect", RutaPersonajeSelect)
