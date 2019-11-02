@@ -48,7 +48,10 @@ Propuesta de puntos de reciclar:
     
 
 4. Entorno 3D + menú selección 3x1. Mecánicas de movimiento personaje
-
+    Juego corriendo:
+    https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/Entorno_3D_menu_seleccion_3x1/Entorno_3D_menu_seleccion_3x1.html
+    Editable Godot
+    
 5. ... y sigue hasta terminar el puto juego
 
 Nota: Recueda que para ver el juego corrriedo debes utilizar un explorador de Internet como Mozilla Firefox 
