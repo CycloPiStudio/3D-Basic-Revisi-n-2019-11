@@ -48,13 +48,15 @@ func _on_Player_1_mouse_exited():
 
 func _on_Player_2_pressed():
 	get_parent().get_node("boton").play()
-#	Global.cargarPlayer("res://Ejecutable/Juego/Personajes/Personaje 2/Personaje2.tscn")
-#	Global.RutaPersonajeSelect = str("res://Ejecutable/Juego/Personajes/Personaje 2/Personaje2.tscn")
-#	PasarASelectecNivel()
+	Global.cargarPlayer("res://Ejecutable/Juego/Personajes/Personaje 2/Personaje2.tscn")
+	Global.RutaPersonajeSelect = str("res://Ejecutable/Juego/Personajes/Personaje 2/Personaje2.tscn")
+	PasarASelectecNivel()
 
-	############# 	útiles para  Menú básico 1x1: ##############
-	get_node("/root/Global Menus").add_child(SelecNiveles)
-	$".".queue_free()
+
+
+#	############# 	útiles para  Menú básico 1x1: ##############
+#	get_node("/root/Global Menus").add_child(SelecNiveles)
+#	$".".queue_free()
 	############################################################
 	pass 
 func _on_Player_2_mouse_entered():
