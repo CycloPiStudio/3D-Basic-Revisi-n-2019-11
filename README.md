@@ -51,10 +51,15 @@ Propuesta de puntos de reciclar:
     Juego corriendo:
     https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/Entorno_3D_menu_seleccion_3x1/Entorno_3D_menu_seleccion_3x1.html
     Editable Godot
-    
-5. ... y sigue hasta terminar el puto juego
+    https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/f6603d9b986faf6cc5ce4425d3dcd1967de06372
+
+
+5. Entorno 3D + mecánicas GO-W + menú 3x1. Mecánicas de movimiento personaje
+
+6. ... y sigue hasta terminar el puto juego
 
 Nota: Recueda que para ver el juego corrriedo debes utilizar un explorador de Internet como Mozilla Firefox 
+
 
 3D Basic original:
 <img src="https://github.com/CycloPiStudio/3D-Basic/blob/master/Imagenes/Captura%20juego%201.png" />
