@@ -4,7 +4,7 @@ extends Node
 var Juego_tempo = preload("res://Ejecutable/Juego/Escenarios/Niveles/Nivel1/Nivel1.tscn").instance()
 ###############
 
-#var partida 
+var partida 
 #
 func _ready():
 	$VBoxContainer.set_position(Vector2(get_viewport().size.x/4 , get_viewport().size.y/4))
@@ -31,23 +31,23 @@ func _ready():
 #
 #	pass
 #
-#func _load_scene(nivel):
-#	Global.RutaNivelSelect = nivel
-#	partida = load(nivel).instance()
+func _load_scene(nivel):
+	Global.RutaNivelSelect = nivel
+	partida = load(nivel).instance()
 #	Global.nivel = partida.get_name()
-#	Global.personaje = load(Global.RutaPersonajeSelect).instance()
-#	Global.personaje.set_name("personaje")
-#	partida.set_name("partida")
-#	partida.get_node("PosicionSalida").add_child(Global.personaje)
-#	get_parent().get_parent().add_child(partida)
-##	print (Global.personaje.get_path())
-#	get_parent().get_node("Musica Menus").stop()
-#	$".".queue_free()
+	Global.personaje = load(Global.RutaPersonajeSelect).instance()
+	Global.personaje.set_name("personaje")
+	partida.set_name("partida")
+	partida.get_node("PosicionSalida").add_child(Global.personaje)
+	get_parent().get_parent().add_child(partida)
+#	print (Global.personaje.get_path())
+	get_parent().get_node("Musica Menus").stop()
+	$".".queue_free()
 #
 #
 #
 func _on_Nivel1_pressed():
-#	_load_scene("res://Ejecutable/Juego/Escenarios/Niveles/Nivel1/nivel1.tscn")
+#	_load_scene("res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/nivel2.tscn")
 	get_parent().get_node("boton").play()
 	############# 	útiles para  Menú básico 1x1: ##############
 	get_node("/root/Global Menus").add_child(Juego_tempo)
@@ -56,11 +56,11 @@ func _on_Nivel1_pressed():
 	pass
 #
 func _on_Nivel2_pressed():
-#	_load_scene("res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/nivel2.tscn")
+	_load_scene("res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/Nivel2.tscn")
 	get_parent().get_node("boton").play()
 	############# 	útiles para  Menú básico 1x1: ##############
-	get_node("/root/Global Menus").add_child(Juego_tempo)
-	$".".queue_free()
+#	get_node("/root/Global Menus").add_child(Juego_tempo)
+#	$".".queue_free()
 	############# ############# 
 #	pass # replace with function body
 #
