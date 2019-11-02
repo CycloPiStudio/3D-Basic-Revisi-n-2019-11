@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Ejecutable/Menus/Select Niveles/SelectNiveles.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Menus/Menu Principal/Imagenes/titulo.png" type="Texture" id=2]
+[ext_resource path="res://Ejecutable/Menus/Comunes/Boton Menu principal.tscn" type="PackedScene" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=8]
+size = 20
+font_data = SubResource( 7 )
+
+[node name="SelectNiveles" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 748.343, 303.219 )
+scale = Vector2( 0.906318, 0.797089 )
+texture = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Nivel1" type="Button" parent="VBoxContainer"]
+margin_right = 122.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 2 )
+text = "Nivel 1"
+
+[node name="Nivel2" type="Button" parent="VBoxContainer"]
+margin_top = 31.0
+margin_right = 122.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 4 )
+text = "Nivel 2"
+
+[node name="Nivel3" type="Button" parent="VBoxContainer"]
+margin_top = 62.0
+margin_right = 122.0
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 6 )
+text = "Nivel 3"
+
+[node name="Nivel4" type="Button" parent="VBoxContainer"]
+margin_top = 93.0
+margin_right = 122.0
+margin_bottom = 120.0
+custom_fonts/font = SubResource( 8 )
+text = "Nivel 4"
+
+[node name="Boton Menu principal" parent="." instance=ExtResource( 3 )]
+editor/display_folded = true
+[connection signal="pressed" from="VBoxContainer/Nivel1" to="." method="_on_Nivel1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel2" to="." method="_on_Nivel2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel3" to="." method="_on_Nivel3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel4" to="." method="_on_Nivel4_pressed"]
+[connection signal="script_changed" from="Boton Menu principal" to="." method="_on_Boton_Menu_principal_script_changed"]
+
+[editable path="Boton Menu principal"]
