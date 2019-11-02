@@ -21,12 +21,14 @@ func _on_Timer_timeout():
 			get_node("/root/Global Menus").add_child(Menu)
 	#		Global.nivel = Global.nivel+1
 	#		get_node("/root/Nodo_Dios/Music_menu").play()
+			
 			$".".queue_free()
 		else:
 			Global.subirnivel()
 			Menu =preMenu.instance()
 			get_node("/root/Global Menus").add_child(Menu)
-			get_node("/root/partida").queue_free()
+#			Global.personaje.get_path()
+			get_parent().queue_free()
 			
 	get_node("Timer").start()
 	pass # Replace with function body.
