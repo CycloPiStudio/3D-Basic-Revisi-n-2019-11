@@ -2,7 +2,8 @@ extends Node
 
 # útiles para  Menú básico 1x1: Un menú de entrar y un juego (sin determinar: temporizador)
 # Modificar - borrar para diferentes proyectos ###############
-var Juego_tempo = preload("res://Ejecutable/Juego/Escenarios/Niveles/Nivel1/Nivel1.tscn").instance()
+#var Juego_tempo = preload("res://Ejecutable/Juego/Escenarios/Niveles/Nivel1/Nivel1.tscn").instance()
+var Selec_Nivel = preload("res://Ejecutable/Menus/Select Niveles/SelectNiveles.tscn").instance()
 ###############
 var PreCreditos = load("res://Ejecutable/Menus/Creditos/Creditos.tscn")
 var Creditos
@@ -31,7 +32,7 @@ func _on_Creditos_pressed():
 func _on_Jugar_pressed():
 #	get_node("/root/Global Menus").add_child(Jugar)
 ############# 	útiles para  Menú básico 1x1: ##############
-	get_node("/root/Global Menus").add_child(Juego_tempo)
+	get_node("/root/Global Menus").add_child(Selec_Nivel)
 ############################################################
 	get_parent().get_node("boton").play()
 	$".".queue_free()
