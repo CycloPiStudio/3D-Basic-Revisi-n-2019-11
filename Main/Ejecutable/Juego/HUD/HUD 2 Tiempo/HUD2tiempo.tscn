@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 2 Tiempo/HUD2tiempoS.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 2 Tiempo/img/background.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = SubResource( 3 )
+
+[node name="HUD2tiempo" type="MarginContainer"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 151.0
+margin_bottom = 51.0
+texture = ExtResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect"]
+margin_left = 15.0
+margin_right = 89.0
+margin_bottom = 55.0
+
+[node name="Label" type="Label" parent="TextureRect/HBoxContainer"]
+margin_top = 17.0
+margin_right = 118.0
+margin_bottom = 38.0
+custom_fonts/font = SubResource( 2 )
+text = "Tiempo: "
+
+[node name="Tiempo" type="Label" parent="TextureRect/HBoxContainer"]
+margin_left = 122.0
+margin_top = 17.0
+margin_right = 122.0
+margin_bottom = 38.0
+custom_fonts/font = SubResource( 4 )
+

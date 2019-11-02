@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = SubResource( 1 )
+
+[node name="Label" type="MarginContainer"]
+
+[node name="Label_datos_comunes" type="Label" parent="."]
+margin_right = 57.0
+margin_bottom = 2.0
+custom_fonts/font = SubResource( 2 )
+text = "Label_datos_comunesLabel_datos_comunesLabel_datos_comunes"
+

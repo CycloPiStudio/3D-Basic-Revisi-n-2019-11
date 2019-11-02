@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 4 Arma/HUD4ArmaS.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD Datos Comunes/Datos_comunes.tscn" type="PackedScene" id=2]
+
+[node name="HUD4armaNodo" type="Node2D" index="0"]
+
+position = Vector2( 2.05054, 0 )
+script = ExtResource( 1 )
+
+[node name="Datos_comunes" parent="." index="0" instance=ExtResource( 2 )]
+
+

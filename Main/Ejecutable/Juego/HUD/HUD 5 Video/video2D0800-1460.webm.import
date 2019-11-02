@@ -1,0 +1,14 @@
+[remap]
+
+importer="Webm"
+type="VideoStreamWebm"
+path="res://.import/video2D0800-1460.webm-ce16301790b6303b9fb63a20dc89f54d.webmstr"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/HUD/HUD 5 Video/video2D0800-1460.webm"
+dest_files=[ "res://.import/video2D0800-1460.webm-ce16301790b6303b9fb63a20dc89f54d.webmstr" ]
+
+[params]
+
+loop=true

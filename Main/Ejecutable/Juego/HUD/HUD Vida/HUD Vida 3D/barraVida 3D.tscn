@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD Vida/HUD Vida 3D/barraVida 3D.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD Vida/HUD Vida 3D/Modelo/BarraVida.tscn" type="PackedScene" id=2]
+
+[node name="barraVida 3D" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="BarraVida" parent="." instance=ExtResource( 2 )]
+
+[editable path="BarraVida"]

@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD Vida/HUD Vida.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 2 Tiempo/HUD2tiempo.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 3 Puntos/HUD3Puntos.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 6 Pause/Pause.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD 9 Mapa/HUD 9 Mapa.tscn" type="PackedScene" id=5]
+
+[node name="HUD" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1.0
+margin_bottom = -475.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 1025.0
+margin_bottom = 141.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+margin_right = 821.0
+margin_bottom = 141.0
+size_flags_horizontal = 3
+
+[node name="HUD Vida" parent="HBoxContainer/VBoxContainer2" instance=ExtResource( 1 )]
+margin_right = 821.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+margin_left = 825.0
+margin_right = 1025.0
+margin_bottom = 141.0
+
+[node name="HUD2tiempo" parent="HBoxContainer/VBoxContainer" instance=ExtResource( 2 )]
+margin_right = 200.0
+margin_bottom = 51.0
+
+[node name="HUD3puntosNodo" parent="HBoxContainer/VBoxContainer" instance=ExtResource( 3 )]
+margin_top = 55.0
+margin_right = 200.0
+margin_bottom = 106.0
+
+[node name="Pause" parent="HBoxContainer/VBoxContainer" instance=ExtResource( 4 )]
+margin_top = 110.0
+margin_right = 200.0
+margin_bottom = 137.0
+
+[node name="HUD 9 Mapa" parent="HBoxContainer/VBoxContainer" instance=ExtResource( 5 )]
+margin_top = 141.0
+margin_right = 200.0
+margin_bottom = 141.0
+
+[node name="ViewPortSprite" parent="HBoxContainer/VBoxContainer/HUD 9 Mapa" index="0"]
+centered = false
+
+[editable path="HBoxContainer/VBoxContainer/HUD 9 Mapa"]
