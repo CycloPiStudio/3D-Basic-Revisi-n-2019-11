@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/Modelo/terreno.dae" type="PackedScene" id=1]
+
+[node name="Terreno" instance=ExtResource( 1 )]
+
