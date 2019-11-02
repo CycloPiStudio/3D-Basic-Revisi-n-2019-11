@@ -42,11 +42,15 @@ Propuesta de puntos de reciclar:
 
 3. Menú selección 3x1: Tres menús de selección (nivel, personaje) y un juego (sin determinar: temporizador).
     Juego corriendo:
+    https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/menu_basic_3x1/menu_basic_3x1.html 
     Editable Godot:
+    
+    
+    
 4. Entorno 3D + menú selección 3x1. Mecánicas de movimiento personaje
 5. ... y sigue hasta terminar el puto juego
 
-Nota: Recueda que para cer el juego corrriedo debes utilizar un explorador de Internet como Mozilla Firefox 
+Nota: Recueda que para ver el juego corrriedo debes utilizar un explorador de Internet como Mozilla Firefox 
 
 3D Basic original:
 <img src="https://github.com/CycloPiStudio/3D-Basic/blob/master/Imagenes/Captura%20juego%201.png" />
