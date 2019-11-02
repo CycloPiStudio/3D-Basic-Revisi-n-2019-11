@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Ejecutable/Menus/Select Personaje/SelectPersonaje.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Menus/Comunes/Boton Menu principal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ejecutable/Juego/Personajes/Personaje 2/Modelo/Extrat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Ejecutable/Juego/Personajes/Personaje 1/Modelo/Gooblin.tscn" type="PackedScene" id=4]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = SubResource( 3 )
+
+[node name="SelectPlayer" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Boton Menu principal" parent="." instance=ExtResource( 2 )]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+editor/display_folded = true
+margin_right = 145.0
+margin_bottom = 58.0
+
+[node name="Player 1" type="Button" parent="VBoxContainer"]
+margin_right = 145.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 2 )
+text = "Player 1"
+
+[node name="Player 2" type="Button" parent="VBoxContainer"]
+margin_top = 31.0
+margin_right = 145.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 4 )
+text = "Player 2"
+
+[node name="HUD 3D" type="Node2D" parent="."]
+
+[node name="ViewPortSprite" type="Sprite" parent="HUD 3D"]
+position = Vector2( 761.807, 299.159 )
+scale = Vector2( 0.865096, 0.813725 )
+region_rect = Rect2( 30, 62, 212, 220 )
+
+[node name="Viewport" type="Viewport" parent="HUD 3D"]
+editor/display_folded = true
+size = Vector2( 300, 300 )
+own_world = true
+
+[node name="modelo" type="Spatial" parent="HUD 3D/Viewport"]
+
+[node name="Scene RootP2" parent="HUD 3D/Viewport/modelo" instance=ExtResource( 3 )]
+editor/display_folded = true
+visible = false
+
+[node name="Scene RootP1" parent="HUD 3D/Viewport/modelo" instance=ExtResource( 4 )]
+visible = false
+
+[node name="Camera" type="Camera" parent="HUD 3D/Viewport"]
+transform = Transform( -0.999997, -0.00216686, -0.000597453, 0.00202131, -0.983179, 0.182631, -0.000983141, 0.18263, 0.983181, 0, 2.23209, 2.40542 )
+current = true
+
+[node name="OmniLight" type="OmniLight" parent="HUD 3D/Viewport"]
+
+[node name="OmniLight2" type="OmniLight" parent="HUD 3D/Viewport"]
+[connection signal="mouse_entered" from="VBoxContainer/Player 1" to="." method="_on_Player_1_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Player 1" to="." method="_on_Player_1_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Player 1" to="." method="_on_Player_1_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Player 2" to="." method="_on_Player_2_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Player 2" to="." method="_on_Player_2_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Player 2" to="." method="_on_Player_2_pressed"]
