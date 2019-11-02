@@ -41,16 +41,24 @@ Propuesta de puntos de reciclar:
 
 
 3. Menú selección 3x1: Tres menús de selección (nivel, personaje) y un juego (sin determinar: temporizador).
+
     Juego corriendo:
+    
     https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/menu_basic_3x1/menu_basic_3x1.html 
+    
     Editable Godot:
+    
     https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/c8c019c4a8c7f2e5b3517e1591b4f4e37594cf6c
     
 
 4. Entorno 3D + menú selección 3x1. Mecánicas de movimiento personaje
+    
     Juego corriendo:
+    
     https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/Entorno_3D_menu_seleccion_3x1/Entorno_3D_menu_seleccion_3x1.html
+    
     Editable Godot
+    
     https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/f6603d9b986faf6cc5ce4425d3dcd1967de06372
 
 
