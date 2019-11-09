@@ -2,7 +2,7 @@ extends KinematicBody
 
 var preNoMensa = preload("res://Ejecutable/Juego/HUD/HUD 8 Mensaje/Hud_mensaje_info.tscn")
 var NoMensa 
-var padreBala
+#var padreBala
 
 onready var tiempo_escala = get_node("Tiemposcala")
 var contador = 0
