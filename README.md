@@ -65,9 +65,10 @@ Propuesta de puntos de reciclar:
 5. Entorno 3D + mecánicas GO-W + menú 3x1. Potenciadores
     Juego corriendo:
     https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/Entorno_3D_GOW_3x1/Entorno_3D_GOW_3x1.html
-        Nota al juego corriendo: paciencia paciencia que va
-    Editable Godot:
+        Nota al juego corriendo: paciencia paciencia que va (va lentico para cargar)
     
+    Editable Godot:
+    https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/e1403d6a871b23a8db83c0aefe347f33541c004d
     
     
 6. Entorno 3D + mecánicas GO-W+ niveles CycloPi + menú 3x1. Poner niveles
