@@ -2,7 +2,7 @@ extends MarginContainer
 
 var viewport = null
 var viewport_sprite = null
-var modelo = null
+#var modelo = null
 var camaraMinimapa = null
 
 func _ready():
@@ -15,8 +15,8 @@ func _ready():
 #	modelo = $"HUD 3D/Viewport/modelo"
 	pass
 
-func _physics_process(delta):
-	$"ViewPortSprite".texture.get_size().x
+func _physics_process(_delta):
+#	$"ViewPortSprite".texture.get_size().x
 	miniMapaPlayer()
 	
 	
