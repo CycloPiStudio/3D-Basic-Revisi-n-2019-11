@@ -1,0 +1,77 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.2_Puntos/P.2_Puntos.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.0_Ganar/P.0_Ganar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.4_Bazoka/P.4_Bazoka.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.5_Vida/P.5_Vida.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.7_Guardar/Guardar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.6_Laser/P.6_pistola_laser.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Piezas/Pi1_Panel_2D/Pi1_Panel_2D.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Piezas/Pi2_Pelota/Pi2_Pelotikaka.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Piezas/Pi3_Ladrillo/Pi3_Ladrillo.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Ejecutable/Juego/Enemigo/Enemigo 2/Enemigo2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Ejecutable/Juego/HUD/HUD/HUD.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/Modelo/Terreno.tscn" type="PackedScene" id=12]
+
+[node name="nivel2" type="Spatial"]
+
+[node name="PosicionSalida" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.09692, 0 )
+
+[node name="Potenciadores" type="Spatial" parent="."]
+
+[node name="Potenciador2" parent="Potenciadores" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0636, 1.97853, 1.01837 )
+
+[node name="Potenciador0Salir" parent="Potenciadores" instance=ExtResource( 2 )]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 17.2602, -1.08836, 2.79876 )
+
+[node name="P4_Bazoka" parent="Potenciadores" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.100006, -0.490466, 17.0325 )
+visible = false
+
+[node name="P2_Puntos" parent="Potenciadores" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.48352, 0 )
+
+[node name="Guardar" parent="Potenciadores" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8068, -0.114746, 0 )
+visible = false
+
+[node name="P6_pistola_laser" parent="Potenciadores" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.73063, 2.72302 )
+
+[node name="Piezas" type="Spatial" parent="."]
+
+[node name="Pi1_Panel_2D" parent="Piezas" instance=ExtResource( 7 )]
+transform = Transform( -0.260685, 0, 0.965424, 0, 1, 0, -0.965424, 0, -0.260685, 6.86733, -1.75252, 13.205 )
+
+[node name="Pi2_Pelotikaka" parent="Piezas" instance=ExtResource( 8 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -34.0201, 21.6914, -33.4448 )
+
+[node name="Pi3_Ladrillo" parent="Piezas" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.578, -0.229248, -14.2869 )
+
+[node name="Iluminacion" type="Spatial" parent="."]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Iluminacion"]
+transform = Transform( 0.874292, 0.112432, -0.4722, 0.108045, 0.903322, 0.415133, 0.473223, -0.413966, 0.77762, 0, 23.6739, 3.53064 )
+
+[node name="Enemigos" type="Spatial" parent="."]
+
+[node name="Enemigo2" parent="Enemigos" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.03803, 4.3164, -9.26294 )
+
+[node name="Enemigo3" parent="Enemigos" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0368, 14.0234, -9.26294 )
+
+[node name="HUD" parent="." instance=ExtResource( 11 )]
+
+[node name="Camera" parent="HUD/HBoxContainer/VBoxContainer/HUD 9 Mapa/Viewport" index="0"]
+transform = Transform( -4.37114e-008, -1, -4.37114e-008, 0, -4.37114e-008, 1, -1, 4.37114e-008, 1.91069e-015, 0, 37.6735, 0 )
+size = 129.6
+
+[node name="Terreno" parent="." instance=ExtResource( 12 )]
+
+[editable path="HUD"]
+
+[editable path="HUD/HBoxContainer/VBoxContainer/HUD 9 Mapa"]
