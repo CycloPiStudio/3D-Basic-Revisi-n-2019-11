@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pi2_Pelota.obj-58852e2161eecad51ece6695c1ecaa56.mesh"
+
+[deps]
+
+files=[ "res://.import/Pi2_Pelota.obj-58852e2161eecad51ece6695c1ecaa56.mesh" ]
+
+source_file="res://Ejecutable/Juego/Escenarios/Piezas/Pi2_Pelota/Modelo/Pi2_Pelota.obj"
+dest_files=[ "res://.import/Pi2_Pelota.obj-58852e2161eecad51ece6695c1ecaa56.mesh", "res://.import/Pi2_Pelota.obj-58852e2161eecad51ece6695c1ecaa56.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

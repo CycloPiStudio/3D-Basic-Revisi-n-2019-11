@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Piezas/Pi3_Ladrillo/Modelo/Pi3_Ladrillo.dae" type="PackedScene" id=1]
+
+[node name="Scene Root" index="0" instance=ExtResource( 1 )]
+
+
