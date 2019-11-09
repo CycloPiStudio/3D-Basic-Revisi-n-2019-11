@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/DannoMalo.wav-d928f3ff7e8476be84a84a5234f4fff2.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Enemigo/Enemigo 2/Sonido/DannoMalo.wav"
+dest_files=[ "res://.import/DannoMalo.wav-d928f3ff7e8476be84a84a5234f4fff2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

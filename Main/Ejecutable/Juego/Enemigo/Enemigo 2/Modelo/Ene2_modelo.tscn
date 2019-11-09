@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Enemigo/Enemigo 2/Modelo/Enemigo_2_cannon.dae" type="PackedScene" id=1]
+
+[node name="Ene2_modelo" type="Spatial" index="0"]
+
+[node name="Scene Root" parent="." index="0" instance=ExtResource( 1 )]
+
+

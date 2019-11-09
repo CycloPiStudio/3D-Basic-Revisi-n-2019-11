@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Enemigo/Enemigo 1/Modelo/estawa.dae" type="PackedScene" id=1]
+
+[node name="Enemigo1" instance=ExtResource( 1 )]
+transform = Transform( 1.00016, 0, 0, 0, 0.819702, 0, 0, 0, 0.809204, 0, 0, 0 )
+
+[node name="Armature" parent="." index="0"]
+editor/display_folded = true
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "Andar_Pac"
+playback_speed = 2.0
+next/Andar_Pac = "Andar_Pac"

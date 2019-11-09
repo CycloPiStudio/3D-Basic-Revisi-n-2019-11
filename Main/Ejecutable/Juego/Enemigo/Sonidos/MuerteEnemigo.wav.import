@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MuerteEnemigo.wav-d8354b4fec50203294e4aa4dbbdb6ab4.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Enemigo/Sonidos/MuerteEnemigo.wav"
+dest_files=[ "res://.import/MuerteEnemigo.wav-d8354b4fec50203294e4aa4dbbdb6ab4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
