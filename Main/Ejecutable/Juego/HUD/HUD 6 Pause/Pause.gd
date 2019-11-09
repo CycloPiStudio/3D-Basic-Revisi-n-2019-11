@@ -27,7 +27,7 @@ func _ready():
 
 #	pass
 
-func _input(ev):
+func _input(_ev):
 	if Input.is_key_pressed(KEY_P):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		_on_Pause_pressed()
