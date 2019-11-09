@@ -4,9 +4,9 @@ extends Node2D
 # var a = 2
 # var b = "textvar"
 var Node_mensa
-var mensaText
+#var mensaText
 
-func _process(delta):
+func _process(_delta):
 	Node_mensa = get_node("Mensaje")
 	Node_mensa.set_position(Vector2(Node_mensa.get_position().x,Node_mensa.get_position().y+1))
 #	print(Node_mensa)
