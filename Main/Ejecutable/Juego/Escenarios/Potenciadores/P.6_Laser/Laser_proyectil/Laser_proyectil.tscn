@@ -1,0 +1,97 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.6_Laser/Laser_proyectil/Laser_proyectil.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.6_Laser/Laser_proyectil/Modelo/Laser_proyectil.dae" type="PackedScene" id=2]
+
+[sub_resource type="BoxShape" id=1]
+
+extents = Vector3( 0.0358857, 0.0353557, 0.252786 )
+
+[sub_resource type="BoxShape" id=2]
+
+extents = Vector3( 0.0379192, 0.0443827, 0.162725 )
+
+[node name="Laser" type="KinematicBody"]
+
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+axis_lock_linear_x = false
+axis_lock_linear_y = false
+axis_lock_linear_z = false
+axis_lock_angular_x = false
+axis_lock_angular_y = false
+axis_lock_angular_z = false
+collision/safe_margin = 0.001
+script = ExtResource( 1 )
+_sections_unfolded = [ "Axis Lock", "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="." index="0"]
+
+transform = Transform( 0.976072, 0, 0, 0, 0.976072, 0, 0, 0, 0.629416, 0.0060747, 0, -0.16111 )
+shape = SubResource( 1 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="VisibilityNotifier" type="VisibilityNotifier" parent="." index="1"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.412422, 0, 0 )
+aabb = AABB( -1, -1, -1, 2, 2, 2 )
+
+[node name="Timer" type="Timer" parent="." index="2"]
+
+process_mode = 0
+wait_time = 1.0
+one_shot = false
+autostart = true
+
+[node name="Area" type="Area" parent="." index="3"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.412422, 0, 0 )
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 0.0
+monitoring = true
+monitorable = true
+collision_layer = 1
+collision_mask = 1
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+_sections_unfolded = [ "Audio Bus", "Collision" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.414416, 0, -0.165795 )
+shape = SubResource( 2 )
+disabled = false
+
+[node name="Tiemposcala" type="Timer" parent="." index="4"]
+
+process_mode = 1
+wait_time = 0.01
+one_shot = false
+autostart = false
+
+[node name="Scene Root" parent="." index="5" instance=ExtResource( 2 )]
+
+[connection signal="screen_exited" from="VisibilityNotifier" to="." method="_on_VisibilityNotifier_screen_exited"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
+
+[connection signal="timeout" from="Tiemposcala" to="." method="_on_Tiemposcala_timeout"]
+
+

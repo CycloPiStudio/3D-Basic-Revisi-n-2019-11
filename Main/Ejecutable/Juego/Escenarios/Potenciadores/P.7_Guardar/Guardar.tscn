@@ -1,0 +1,164 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.7_Guardar/Guardar.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.7_Guardar/Modelo/Baul.tscn" type="PackedScene" id=2]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.248218, 0.182978, 0.245911 )
+
+[node name="Guardar" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Baul " parent="." instance=ExtResource( 2 )]
+
+[node name="Area" type="Area" parent="Baul "]
+input_ray_pickable = false
+
+[node name="CollisionShape" type="CollisionShape" parent="Baul /Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.198214, 0 )
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="Baul /Area"]
+wait_time = 5.0
+one_shot = true
+
+[node name="Popup" type="Panel" parent="."]
+pause_mode = 2
+visible = false
+margin_right = 231.0
+margin_bottom = 134.0
+
+[node name="Restaurar partida" type="Button" parent="Popup"]
+margin_left = 53.767
+margin_top = 150.437
+margin_right = 173.767
+margin_bottom = 170.437
+text = "Restaurar partida"
+
+[node name="Guardados" type="VBoxContainer" parent="Popup"]
+margin_left = 7.70013
+margin_top = 12.3202
+margin_right = 47.7001
+margin_bottom = 120.32
+
+[node name="Guardado 1" type="CheckBox" parent="Popup/Guardados"]
+editor/display_folded = true
+margin_right = 40.0
+margin_bottom = 24.0
+
+[node name="Nombre1" type="LineEdit" parent="Popup/Guardados/Guardado 1"]
+visible = false
+margin_left = 38.0
+margin_top = 1.0
+margin_right = 214.0
+margin_bottom = 25.0
+
+[node name="NombreGuardado1" type="Label" parent="Popup/Guardados/Guardado 1"]
+margin_left = 44.0
+margin_top = 6.0
+margin_right = 84.0
+margin_bottom = 20.0
+
+[node name="Guardar1" type="Button" parent="Popup/Guardados/Guardado 1"]
+visible = false
+margin_left = 229.0
+margin_top = 3.0
+margin_right = 262.0
+margin_bottom = 23.0
+text = "Guardar"
+
+[node name="Guardado 2" type="CheckBox" parent="Popup/Guardados"]
+editor/display_folded = true
+margin_top = 28.0
+margin_right = 40.0
+margin_bottom = 52.0
+
+[node name="Nombre2" type="LineEdit" parent="Popup/Guardados/Guardado 2"]
+visible = false
+margin_left = 38.0
+margin_top = 1.0
+margin_right = 214.0
+margin_bottom = 25.0
+
+[node name="NombreGuardado2" type="Label" parent="Popup/Guardados/Guardado 2"]
+margin_left = 44.0
+margin_top = 6.0
+margin_right = 84.0
+margin_bottom = 20.0
+
+[node name="Guardar2" type="Button" parent="Popup/Guardados/Guardado 2"]
+visible = false
+margin_left = 229.0
+margin_top = 3.0
+margin_right = 262.0
+margin_bottom = 23.0
+text = "Guardar"
+
+[node name="Guardado 3" type="CheckBox" parent="Popup/Guardados"]
+editor/display_folded = true
+margin_top = 56.0
+margin_right = 40.0
+margin_bottom = 80.0
+
+[node name="Nombre3" type="LineEdit" parent="Popup/Guardados/Guardado 3"]
+visible = false
+margin_left = 38.0
+margin_top = 1.0
+margin_right = 214.0
+margin_bottom = 25.0
+
+[node name="NombreGuardado3" type="Label" parent="Popup/Guardados/Guardado 3"]
+margin_left = 44.0
+margin_top = 6.0
+margin_right = 84.0
+margin_bottom = 20.0
+
+[node name="Guardar3" type="Button" parent="Popup/Guardados/Guardado 3"]
+visible = false
+margin_left = 229.0
+margin_top = 3.0
+margin_right = 262.0
+margin_bottom = 23.0
+text = "Guardar"
+
+[node name="Guardado 4" type="CheckBox" parent="Popup/Guardados"]
+editor/display_folded = true
+margin_top = 84.0
+margin_right = 40.0
+margin_bottom = 108.0
+
+[node name="Nombre4" type="LineEdit" parent="Popup/Guardados/Guardado 4"]
+visible = false
+margin_left = 38.0
+margin_top = 1.0
+margin_right = 214.0
+margin_bottom = 25.0
+
+[node name="NombreGuardado4" type="Label" parent="Popup/Guardados/Guardado 4"]
+margin_left = 44.0
+margin_top = 6.0
+margin_right = 84.0
+margin_bottom = 20.0
+
+[node name="Guardar4" type="Button" parent="Popup/Guardados/Guardado 4"]
+visible = false
+margin_left = 229.0
+margin_top = 3.0
+margin_right = 262.0
+margin_bottom = 23.0
+text = "Guardar"
+[connection signal="body_entered" from="Baul /Area" to="." method="_on_Area_body_entered"]
+[connection signal="timeout" from="Baul /Area/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="Popup/Restaurar partida" to="." method="_on_Restaurar_partida_pressed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 1" to="." method="_on_Guardado_1_pressed"]
+[connection signal="text_changed" from="Popup/Guardados/Guardado 1/Nombre1" to="." method="_on_Nombre1_text_changed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 1/Guardar1" to="." method="_on_Guardar1_pressed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 2" to="." method="_on_Guardado_2_pressed"]
+[connection signal="text_changed" from="Popup/Guardados/Guardado 2/Nombre2" to="." method="_on_Nombre2_text_changed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 2/Guardar2" to="." method="_on_Guardar2_pressed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 3" to="." method="_on_Guardado_3_pressed"]
+[connection signal="text_changed" from="Popup/Guardados/Guardado 3/Nombre3" to="." method="_on_Nombre3_text_changed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 3/Guardar3" to="." method="_on_Guardar3_pressed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 4" to="." method="_on_Guardado_4_pressed"]
+[connection signal="text_changed" from="Popup/Guardados/Guardado 4/Nombre4" to="." method="_on_Nombre4_text_changed"]
+[connection signal="pressed" from="Popup/Guardados/Guardado 4/Guardar4" to="." method="_on_Guardar4_pressed"]

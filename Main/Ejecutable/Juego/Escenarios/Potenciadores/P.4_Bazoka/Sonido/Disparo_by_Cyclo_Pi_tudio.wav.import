@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Disparo_by_Cyclo_Pi_tudio.wav-63d0b615cf073bf14526f03e2b1a7655.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Escenarios/Potenciadores/P.4_Bazoka/Sonido/Disparo_by_Cyclo_Pi_tudio.wav"
+dest_files=[ "res://.import/Disparo_by_Cyclo_Pi_tudio.wav-63d0b615cf073bf14526f03e2b1a7655.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

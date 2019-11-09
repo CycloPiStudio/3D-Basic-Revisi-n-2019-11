@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.5_Vida/P.5_Vida.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.5_Vida/Modelo/PotenciadorVida.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Sonidos/Audio_poteciador2.wav" type="AudioStream" id=3]
+[ext_resource path="res://Ejecutable/Juego/Escenarios/Potenciadores/P.2_Puntos/Modelo/images/ImagenPotenciador2.png" type="Texture" id=4]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.652186, 0.859576, 0.623487 )
+
+[node name="P5_Vida" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="PotenciadorVida" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.505922, 0 )
+
+[node name="AudioPotenciador2" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Area" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.355303, 0 )
+shape = SubResource( 1 )
+
+[node name="Hub_vida" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Hub_vida"]
+position = Vector2( 335.605, -56.9717 )
+texture = ExtResource( 4 )
+offset = Vector2( 20, 0 )
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]

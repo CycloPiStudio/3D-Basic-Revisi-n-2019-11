@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Carga_Arma_by_Cyclo_Pi_Studio.wav-4d8ca5f8fbff9cb7371e28103a2a34bf.sample"
+
+[deps]
+
+source_file="res://Ejecutable/Juego/Escenarios/Potenciadores/P.4_Bazoka/Sonido/Carga_Arma_by_Cyclo_Pi_Studio.wav"
+dest_files=[ "res://.import/Carga_Arma_by_Cyclo_Pi_Studio.wav-4d8ca5f8fbff9cb7371e28103a2a34bf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
