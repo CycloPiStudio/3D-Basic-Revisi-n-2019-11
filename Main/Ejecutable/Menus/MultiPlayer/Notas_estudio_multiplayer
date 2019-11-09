@@ -1,0 +1,11 @@
+# Título del documento: Estudio del los scrip para el multiplayer
+# Planificación , documeto de diseño de juego para la parte de multiplayer
+# Estudio  = coger la demos y destriparla
+# Escrip necesario para el multiplayer
+# estado_juego, que va en el singletón, es deonde van las funciones básicas para tema de redes, creo
+# recepcion, otro scrip que pa la administración de la parida, jugadores , supongo, todavía no he llegao
+# en los scrip de del juego como el player o el escenario hub, también habrá que poner cosas
+
+# Nota de gestión de proyecto
+# Aprovecho, hay muchos errores, y que en mi PC con win 8 no arranca, si en win 7, pero con más de 18 errores
+# bueno irémetiendo aquí las cosas del multi player

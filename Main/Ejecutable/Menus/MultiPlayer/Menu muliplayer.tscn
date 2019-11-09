@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ejecutable/Menus/Comunes/Boton Menu principal.tscn" type="PackedScene" id=1]
+
+[node name="Menu muliplayer" type="Node"]
+
+[node name="Boton Menu principal" parent="." instance=ExtResource( 1 )]

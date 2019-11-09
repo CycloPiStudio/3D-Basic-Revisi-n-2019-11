@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Ejecutable/Menus/Win/WinS.gd" type="Script" id=1]
+[ext_resource path="res://Ejecutable/Menus/Comunes/Boton Menu principal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Ejecutable/Menus/Sonidos/win.wav" type="AudioStream" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Ejecutable/Global/Fuentes/04B_30__.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+font_data = SubResource( 1 )
+
+[node name="Win" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Boton Menu principal" parent="." instance=ExtResource( 2 )]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 365.0
+margin_top = 166.0
+margin_right = 458.0
+margin_bottom = 229.0
+text = "you win, máquina"
+
+[node name="BotonSelecNivel" type="Button" parent="Label"]
+margin_left = 11.0
+margin_top = 38.0
+margin_right = 98.0
+margin_bottom = 66.0
+custom_fonts/font = SubResource( 2 )
+text = "Selec Nivel"
+
+[node name="AudioWin" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+
+[connection signal="pressed" from="Label/BotonSelecNivel" to="." method="_on_BotonSelecNivel_pressed"]
