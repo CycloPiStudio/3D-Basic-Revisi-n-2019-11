@@ -4,12 +4,12 @@ var sonido_arma
 var preBazoka = load("res://Ejecutable/Juego/Escenarios/Potenciadores/P.6_Laser/P.6_pistola_laser.tscn")
 
 var Bazoka
-var PoseedorBazoka
-var Posicion
+#var PoseedorBazoka
+#var Posicion
 onready var tiempo_disparo = get_node("Tiempo_disparo")
 
 onready var rutaPlayer = (Global.personaje.get_path())
-onready var nombrePlayer = get_node(rutaPlayer).get_child(0).name
+#onready var nombrePlayer = get_node(rutaPlayer).get_child(0).name
 onready var NodoEsqueleto = get_node((str(Global.personaje.get_path()) + "/" + str(get_node(rutaPlayer).get_child(0).name) + "/rig/Skeleton"))
 
 var posi
