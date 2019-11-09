@@ -56,7 +56,7 @@ func _on_Nivel1_pressed():
 	pass
 #
 func _on_Nivel2_pressed():
-	_load_scene("res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/Nivel2.tscn")
+	_load_scene("res://Ejecutable/Juego/Escenarios/Niveles/Nivel2/nivel2.tscn")
 	get_parent().get_node("boton").play()
 	############# 	útiles para  Menú básico 1x1: ##############
 #	get_node("/root/Global Menus").add_child(Juego_tempo)
