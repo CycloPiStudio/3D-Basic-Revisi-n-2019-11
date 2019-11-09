@@ -11,7 +11,7 @@ func _ready():
 	set_bar_vida()
 	pass
 
-func _process(delta):
+func _process(_delta):
 #	print (get_parent().name)
 #	print (get_parent().vida)
 #	print (Global.vida)
