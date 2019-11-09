@@ -62,9 +62,17 @@ Propuesta de puntos de reciclar:
     https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/f6603d9b986faf6cc5ce4425d3dcd1967de06372
 
 
-5. Entorno 3D + mecánicas GO-W + menú 3x1. Mecánicas de movimiento personaje
+5. Entorno 3D + mecánicas GO-W + menú 3x1. Potenciadores
+    Juego corriendo:
+    https://cyclopistudio.github.io/CyloPi-Studio-Web/testing_2019/Entorno_3D_GOW_3x1/Entorno_3D_GOW_3x1.html
+        Nota al juego corriendo: paciencia paciencia que va
+    Editable Godot:
+    
+    
+    
+6. Entorno 3D + mecánicas GO-W+ niveles CycloPi + menú 3x1. Poner niveles
 
-6. ... y sigue hasta terminar el puto juego
+7.  ... y sigue hasta terminar el puto juego
 
 Nota: Recueda que para ver el juego corrriedo debes utilizar un explorador de Internet como Mozilla Firefox 
 
