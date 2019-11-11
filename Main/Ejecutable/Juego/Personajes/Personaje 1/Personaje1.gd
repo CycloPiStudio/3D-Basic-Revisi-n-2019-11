@@ -1,6 +1,6 @@
 extends KinematicBody
 
-var vida = 100.0
+var vida = 10000.0
 
 func _ready():
 	Global.vida = vida
