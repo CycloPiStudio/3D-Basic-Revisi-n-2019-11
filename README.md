@@ -70,7 +70,7 @@ Propuesta de puntos de reciclar:
     Editable Godot:
     https://github.com/CycloPiStudio/3D-Basic-Revisi-n-2019-11/tree/e1403d6a871b23a8db83c0aefe347f33541c004d
     
-    Nota: aquí hay que enlazar la escena game over, que son se carga
+    Nota: aquí hay que enlazar la escena game over, que no se carga
     
     
     
