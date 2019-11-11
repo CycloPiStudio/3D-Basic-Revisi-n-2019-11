@@ -24,14 +24,14 @@ var JumpAcceleration = 3
 var IsAirborne = false
 
 # var pal cambio gameover
-#var preGameOver = preload("res://Ejecutable/Menus/Game Over/GameOver.tscn").instance()
+var preGameOver = preload("res://Ejecutable/Menus/Game Over/GameOver.tscn").instance()
 var Personaje1Muerto
 var ang_vertical
 
 onready var rutaPlayer = (Global.personaje.get_path())
 onready var nombrePlayer = get_node(rutaPlayer).get_child(0).name
 
-onready var SonidoDanno = get_node("/root/partida/PosicionSalida/personaje/AudioDanno")
+#onready var SonidoDanno = get_node("/root/partida/PosicionSalida/personaje/AudioDanno")
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -127,10 +127,10 @@ func _physics_process(delta):
 #		get_parent().get_node("Gooblin/AnimationPlayer").stop()
 #
 
-	#Colisión
-	if Player.is_on_wall():
-		Global.vida -= 1
-		SonidoDanno.play()
+#	#Colisión
+#	if Player.is_on_wall():
+#		Global.vida -= 1
+#		SonidoDanno.play()
 
 
 
@@ -138,8 +138,7 @@ func _physics_process(delta):
 	if Global.vida < 0:
 #		print("muere")
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-#		Esto no va bien se queda pillao el ratón
-#		get_node("/root/Global Menus").add_child(preGameOver)
+		get_node("/root/Global Menus").add_child(preGameOver)
 		$".".queue_free()
 #		get_tree().get_root() # Access via scene main loop.
 		Personaje1Muerto = get_parent()
